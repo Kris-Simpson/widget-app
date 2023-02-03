@@ -6,6 +6,8 @@ module WidgetApp
 
       mount CptCodes
       mount Offices
+      mount Slots
+      mount Reservations
     end
   end
 end

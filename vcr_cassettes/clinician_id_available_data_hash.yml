@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://johnny-appleseed.clientsecure.me/client-portal-api/cpt-codes?filter%5BclinicianId%5D=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.api+json
+      Api-Version:
+      - '2019-01-17'
+      Application-Build-Version:
+      - 0.0.0
+      Application-Platform:
+      - web
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 03 Feb 2023 15:34:52 GMT
+      Content-Type:
+      - application/vnd.api+json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept
+      - Accept-Encoding
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 12392a27-32df-48fa-bd14-edf7fd374276
+      X-Download-Options:
+      - noopen
+      Etag:
+      - W/"89b4c7d422dbc7177067233f29abee48"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.016025'
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger(R) Enterprise
+      Server:
+      - nginx + Phusion Passenger(R)
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"3866","type":"cptCodes","links":{"self":"https://johnny-appleseed.clientsecure.me/client-portal-api/cpt-codes/3866"},"attributes":{"description":"Psychiatric
+        Diagnostic Evaluation","duration":50,"rate":"100.0","callToBook":"false","requireCreditCardForNewClients":"unset"}},{"id":"31822614","type":"cptCodes","links":{"self":"https://johnny-appleseed.clientsecure.me/client-portal-api/cpt-codes/31822614"},"attributes":{"description":"Intro
+        Call","duration":15,"rate":"0.0","callToBook":"false","requireCreditCardForNewClients":"unset"}}],"links":{"first":"https://johnny-appleseed.clientsecure.me/client-portal-api/cpt-codes?page%5Bnumber%5D=1&page%5Bsize%5D=10","last":"https://johnny-appleseed.clientsecure.me/client-portal-api/cpt-codes?page%5Bnumber%5D=1&page%5Bsize%5D=10"}}'
+  recorded_at: Fri, 03 Feb 2023 15:34:52 GMT
+recorded_with: VCR 6.1.0

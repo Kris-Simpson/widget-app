@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://johnny-appleseed.clientsecure.me/client-portal-api/offices?cptCodeId=3866&filter%5BclinicianId%5D=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.api+json
+      Api-Version:
+      - '2019-01-17'
+      Application-Build-Version:
+      - 0.0.0
+      Application-Platform:
+      - web
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 03 Feb 2023 15:34:53 GMT
+      Content-Type:
+      - application/vnd.api+json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept
+      - Accept-Encoding
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 0457a77c-5c87-4e2a-aa3d-08193da1d8be
+      X-Download-Options:
+      - noopen
+      Etag:
+      - W/"00f0633deb2da1207d8f8899a2deada1"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.015420'
+      X-Content-Type-Options:
+      - nosniff
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger(R) Enterprise
+      Server:
+      - nginx + Phusion Passenger(R)
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"8377723","type":"offices","links":{"self":"https://johnny-appleseed.clientsecure.me/client-portal-api/offices/8377723"},"attributes":{"name":"Video
+        Office","phone":"(626) 298-1956","isVideo":true,"geolocation":{"lat":"0.0","lng":"0.0"},"isPublic":false}}],"links":{"first":"https://johnny-appleseed.clientsecure.me/client-portal-api/offices?page%5Bnumber%5D=1&page%5Bsize%5D=10","last":"https://johnny-appleseed.clientsecure.me/client-portal-api/offices?page%5Bnumber%5D=1&page%5Bsize%5D=10"}}'
+  recorded_at: Fri, 03 Feb 2023 15:34:53 GMT
+recorded_with: VCR 6.1.0
