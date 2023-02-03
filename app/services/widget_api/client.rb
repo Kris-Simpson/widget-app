@@ -9,6 +9,8 @@ module WidgetApi
 				headers:, 
 				query: base_query
 			})
+		rescue => e
+			handle_exceptions(e)
 		end
 
 		def offices(cpt_code_id)
@@ -16,6 +18,16 @@ module WidgetApi
 				headers:, 
 				query: base_query.merge(cptCodeId: cpt_code_id)
 			})
+		rescue => e
+			handle_exceptions(e)
+		end
+
+		def slots
+			raise NotImplemented
+		end
+
+		def reservations
+			raise NotImplemented
 		end
 
 		private
@@ -35,6 +47,15 @@ module WidgetApi
 					clinicianId: Rails.application.credentials.clinician_id
 				}
 			}
+		end
+
+		def handle_exceptions(exception)
+			case exception
+			when SocketError
+				raise exception
+			else
+				raise exception
+			end
 		end
 	end
 end
